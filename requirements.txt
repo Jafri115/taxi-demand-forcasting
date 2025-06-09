@@ -1,0 +1,47 @@
+pandas
+geopandas
+h3
+scikit-learn
+lightgbm
+matplotlib
+folium
+seaborn
+requests
+tqdm
+shapely
+joblib
+ipykernel # For Jupyter notebooks
+notebook # For Jupyter notebooks
+optuna # For hyperparameter tuning (optional, but good for "advanced")
+pyarrow
+h3               # For H3 indexing (used in UDFs)
+pandas           # Still useful on driver, and for Pandas UDFs type hints
+geopandas        # For loading shapefiles initially or on driver
+shapely          # For UDFs involving geometry
+folium           # For visualization on driver
+matplotlib       # For visualization on driver
+seaborn          # For visualization on driver
+requests         # If still needed for downloads
+tqdm             # If still needed for downloads
+joblib           # Spark models are saved differently, but might be used for other objects
+# Optional: For advanced geospatial in Spark
+# sedona-python (Apache Sedona)
+dask[dataframe,diagnostics,distributed] # Core Dask, diagnostics, and distributed scheduler support
+pandas           # Dask DataFrames are composed of Pandas DataFrames
+geopandas        # For loading shapefiles
+shapely          # For UDFs involving geometry
+h3               # For H3 indexing
+scikit-learn     # For metrics and some Dask-ML integrations
+dask-ml          # For Dask-compatible ML algorithms (KMeans)
+lightgbm         # Gradient Boosting model
+# dask-lightgbm is often implicitly handled by lightgbm's dask interface or installed separately if needed.
+# Check LightGBM's Dask documentation for precise requirements.
+# For XGBoost:
+# xgboost
+# dask-xgboost
+folium
+matplotlib
+seaborn
+requests
+tqdm
+joblib           # For saving Scikit-learn compatible models
